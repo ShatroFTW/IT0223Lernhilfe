@@ -1,0 +1,11 @@
+body {
+	font-family: "Verdana";
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+.firstline {
+	font-weight: bold;
+}
