@@ -142,6 +142,7 @@
 									<li><code>.\</code> verweist auf den selben Ordner, wo die aktuelle Datei liegt.
 									</li>
 									<li><code>..\</code> geht einen Ordner zurück.</li>
+									<li><code>target="_blank"</code> öffnet einen Link in einem neuen Tab.</li>
 								</ul>
 								</p>
 							</li>
@@ -223,8 +224,43 @@
 					</div>
 				</div>
 			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						<strong>Tabellen</strong>
+					</button>
+				</h2>
+				<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<ul class="list-group">
+							<li class="list-group-item"><code>&lt;table&gt;...&lt;/a&gt;</code>
+								<p><strong>Tabelle</strong>
+								<br>Erstellt und umschließt eine Tabelle
+								<br><code>border="x"</code> gibt einen Tabellenrahmen der Breite <i>x</i> an.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;thead&gt;...&lt;/thead&gt;</code>
+								<p><strong>Tabellenkopf</strong>
+								<br>Erstellt einen Tabellenkopf. Hier werden die Überschriften der Tabellenspalten über <code>&lt;th&gt;...&lt;/th&gt;</code> hinzugefügt.
+								<br>Zellen werden hier fett und zentriert dargestellt.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;tbody&gt;...&lt;/tbody&gt;</code>
+								<p><strong>Tabellenkörper</strong>
+								<br>Erstellt einen Tabellenkörper. Hier werden alle Daten einer Tabelle über <code>&lt;td&gt;...&lt;/td&gt;</code> eingefügt.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	
+	<button type="button" class="btn btn-primary btn-lg back-button">
+		<a class="nav-link" href="..\index.html">Zurück</a>
+	</button>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
