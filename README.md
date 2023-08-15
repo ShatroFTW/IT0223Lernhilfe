@@ -1,2 +1,2 @@
 # IT0223Lernhilfe
-Lernhilfe für den Kurs IT022023
+Lernhilfe für den Kurs IT-022023
