@@ -1,9 +1,8 @@
 body {
-	font-family: "Verdana";
-	background: silver;
+	padding-top: 65px;
 }
 
-li {
+/* li {
 	margin-bottom: 10px;
 }
 
@@ -12,7 +11,7 @@ li.item {
 	border-radius: 5px;
 	padding: 10px;
 	background: #DDD;
-	width: 50%;
+	max-width: 600px;
 }
 
 a {
@@ -34,4 +33,4 @@ a:hover {
 	color: white;
 	transition: background .3s, color .3s;
 	transition-timing-function: ease-in-out;
-}
+} */
