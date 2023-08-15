@@ -1,37 +1,10 @@
 body {
-	font-family: "Verdana";
-	background: silver;
+	padding-top: 65px;
 }
 
-li {
-	margin-bottom: 10px;
-}
-
-li.item {
-	border: 1px black solid;
-	border-radius: 5px;
-	padding: 10px;
-	background: #DDD;
-	width: 50%;
-}
-
-a {
-	border: 1px black solid;
-	border-radius: 5px;
-	padding: 2px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background: #4287f5;
-	display: block;
-	max-width: 200px;
-	text-align: center;
-	color: black;
-	text-decoration: none;
-}
-
-a:hover {
-	background: blue;
-	color: white;
-	transition: background .3s, color .3s;
-	transition-timing-function: ease-in-out;
+.back-button {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	z-index: 10;
 }

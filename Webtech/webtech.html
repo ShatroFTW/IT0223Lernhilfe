@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Webtech Lernhilfe</title>
+	<link rel="stylesheet" href="..\style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar bg-body-tertiary fixed-top">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<span class="navbar-brand">Lernhilfe für IT0223</span>
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inhalt</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link" href="..\index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="..\IT1\itsys1.html">IT-Systeme 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" active href="#">Webtech</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">WISO</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- CONTENT -->
+	<div class="container-md">
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						<strong>Aufbau einer HTML-Datei</strong>
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<ul class="list-group">
+							<li class="list-group-item"><code>&lt;!DOCTYPE html&gt;</code>
+								<p>Gibt dem Browser an, um welchen Dokumententyp es sich handelt.</p>
+							</li>
+							<li class="list-group-item"><code>&lt;html&gt;...&lt;/html&gt;</code>
+								<p>Dies umfasst den gesamten HTML-Inhalt.</p>
+							</li>
+							<li class="list-group-item"><code>&lt;head&gt;...&lt;/head&gt;</code>
+								<p>Der <i>Kopfteil</i> des Dokuments, hier kommen Informationen rein, die nicht
+									angezeigt
+									werden.</p>
+							</li>
+							<li class="list-group-item"><code>&lt;title&gt;...&lt;/title&gt;</code>
+								<p>Das ist der Titel der Seite und findet sich im Tab wieder. Er gehört in den
+									<code>&lt;head&gt;</code>-Tag.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;body&gt;...&lt;/body&gt;</code>
+								<p>Der <i>Körper</i> des Dokuments, hier steht der Inhalt der Seite.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<strong>Überschriften, Absätze und Co.</strong>
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<ul class="list-group">
+							<li class="list-group-item"><code>&lt;h1&gt;...&lt;/h1&gt;</code>
+								<p><strong>Überschrift</strong>
+									<br>Die Zahl gibt die Größe an. 1 ist am größten, 6 ist am kleinsten.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;p&gt;...&lt;/p&gt;</code>
+								<p><strong>Absatz</strong>
+									<br>Dies umfasst einen gesamten Absatz. Nach einem Absatz wird automatisch ein
+									Zeilenumbruch gemacht.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;br&gt;</code>
+								<p><strong>Zeilenumbruch</strong>
+									<br>Fügt einen Zeilenumbruch ein.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;img&gt;</code>
+								<p><strong>Bild</strong>
+									<br>Fügt ein Bild ein.
+								<ul>
+									<li><code>src="Bildname.jpg"</code> sagt dem <code>&lt;img&gt;</code>-Tag, wie das
+										Bild heißt und wo es sich befindet.</li>
+									<li><code>width="x"</code> gibt die Breite des Bildes an. <i>x</i> ist die Zahl in
+										Pixel oder Prozent.</li>
+									<li><code>height="x"</code> gibt die Höhe des Bildes an. <i>x</i> ist die Zahl in
+										Pixel oder Prozent.</li>
+								</ul>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<strong>Links</strong>
+					</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<ul class="list-group">
+							<li class="list-group-item"><code>&lt;a&gt;...&lt;/a&gt;</code>
+								<p><strong>Hyperlink</strong>
+								<ul>
+									<li>Erstellt einen Link zu einer Webseite oder anderen HTML-Datei.</li>
+									<li>Der Name des Links steht zwischen den beiden Tags.</li>
+									<li><code>href="Linkadresse"</code> sagt dem Link, wohin er verlinken soll.</li>
+									<li><code>.\</code> verweist auf den selben Ordner, wo die aktuelle Datei liegt.
+									</li>
+									<li><code>..\</code> geht einen Ordner zurück.</li>
+									<li><code>target="_blank"</code> öffnet einen Link in einem neuen Tab.</li>
+								</ul>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						<strong>Listen</strong>
+					</button>
+				</h2>
+				<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<ul class="list-group">
+							<li class="list-group-item"><code>&lt;ul&gt;...&lt;/ul&gt;</code>
+								<p><strong>Unsortierte Liste</strong>
+								<ul>
+									<li>Punkt 1</li>
+									<li>Punkt 2</li>
+									<li>Punkt 3</li>
+								</ul>
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;ol&gt;...&lt;/ol&gt;</code>
+								<p><strong>Sortierte Liste</strong>
+								<ol>
+									<li>Punkt 1</li>
+									<li>Punkt 2</li>
+									<li>Punkt 3</li>
+								</ol>
+								Das Attribut <code>reversed</code> zählt die Liste rückwärts.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;li&gt;...&lt;/li&gt;</code>
+								<p>Ein einzelner Listenpunkt innerhalb einer Liste.</p>
+							</li>
+							<li class="list-group-item">
+								<strong>Verschachtelte Listen</strong>
+								<p>Listen können ineinander verschachtelt werden, wenn in einem Listenpunkt eine neue
+									Liste erstellt.
+									Dies gilt auch für gemischte Listen von sortierten und unsortierten Listen.
+								<ul>
+									<li>
+										Ein Punkt
+										<ol>
+											<li>Punkt 1</li>
+											<li>Punkt 2</li>
+										</ol>
+									</li>
+								</ul>
+								<br>
+								<p class="d-inline-flex gap-1">
+									<a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExample"
+										role="button" aria-expanded="false" aria-controls="collapseExample">
+										HTML-Code
+									</a>
+								</p>
+								<div class="collapse" id="collapseExample">
+									<div class="card card-body">
+										<code>
+											&lt;ul&gt;<br>
+											&emsp;&lt;li&gt;<br>
+											&emsp;&emsp;Ein Punkt<br>
+											&emsp;&emsp;&lt;ol&gt;<br>
+											&emsp;&emsp;&emsp;&lt;li&gt;Punkt 1&lt;/li&gt;<br>
+											&emsp;&emsp;&emsp;&lt;li&gt;Punkt 2&lt;/li&gt;<br>
+											&emsp;&emsp;&lt;/ol&gt;<br>
+											&emsp;&lt;/li&gt;<br>
+											&lt;/ul&gt;
+										  </code>
+									</div>
+								</div>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						<strong>Tabellen</strong>
+					</button>
+				</h2>
+				<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<ul class="list-group">
+							<li class="list-group-item"><code>&lt;table&gt;...&lt;/a&gt;</code>
+								<p><strong>Tabelle</strong>
+								<br>Erstellt und umschließt eine Tabelle
+								<br><code>border="x"</code> gibt einen Tabellenrahmen der Breite <i>x</i> an.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;thead&gt;...&lt;/thead&gt;</code>
+								<p><strong>Tabellenkopf</strong>
+								<br>Erstellt einen Tabellenkopf. Hier werden die Überschriften der Tabellenspalten über <code>&lt;th&gt;...&lt;/th&gt;</code> hinzugefügt.
+								<br>Zellen werden hier fett und zentriert dargestellt.
+								</p>
+							</li>
+							<li class="list-group-item"><code>&lt;tbody&gt;...&lt;/tbody&gt;</code>
+								<p><strong>Tabellenkörper</strong>
+								<br>Erstellt einen Tabellenkörper. Hier werden alle Daten einer Tabelle über <code>&lt;td&gt;...&lt;/td&gt;</code> eingefügt.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<button type="button" class="btn btn-primary btn-lg back-button">
+		<a class="nav-link" href="..\index.html">Zurück</a>
+	</button>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
